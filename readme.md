@@ -11,7 +11,7 @@
 - Install git, python3, go, unzip:
   ```sh
   sudo apt-get update | sudo apt-get upgrade -y
-  sudo apt install git python3 golang unzip clang python3-pip python3.10-venv
+  sudo apt install git python3 golang unzip clang python3-pip python3.10-venv nodejs npm
   # Install pnpm
   curl -fsSL https://get.pnpm.io/install.sh | sh -
   source /home/einknuffy/.zshrc
