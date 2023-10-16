@@ -12,6 +12,9 @@
   ```sh
   sudo apt-get update | sudo apt-get upgrade -y
   sudo apt install git python3 golang unzip clang python3-pip python3.10-venv
+  # Install pnpm
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
+  source /home/einknuffy/.zshrc
   ```
 
 - Install zsh:
