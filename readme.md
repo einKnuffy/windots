@@ -8,8 +8,13 @@
 
 ### Setup WSL by downloading Ubuntu
 
-- Install zsh:
+- Install git:
+  ```sh
+  sudo apt install git
   ```
+
+- Install zsh:
+  ```sh
   sudo apt install zsh
   ```
   
@@ -28,14 +33,14 @@
   ```
 
 - Open neovim and run in command mode:
-  ```
+  ```vim
   :call mkdir(stdpath('config'), 'p')
   ```
 
 - Then clone the nvim config into the `.config/nvim` folder
 
 - Install starship:
-  ```
+  ```sh
   curl -sS https://starship.rs/install.sh | sh
   ```
   
