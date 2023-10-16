@@ -12,9 +12,6 @@
   ```sh
   sudo apt-get update | sudo apt-get upgrade -y
   sudo apt install git python3 golang unzip clang python3-pip python3.10-venv nodejs npm
-  # Install pnpm
-  curl -fsSL https://get.pnpm.io/install.sh | sh -
-  source /home/einknuffy/.zshrc
   ```
 
 - Install zsh:
@@ -25,11 +22,13 @@
 - Install oh-my-zsh:
   ```sh
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  # Install pnpm
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
+  source /home/einknuffy/.zshrc
   ```
 
 - Setup zsh plugins:
   ```sh
-  git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   git clone https://github.com/Pilaton/OhMyZsh-full-autoupdate.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ohmyzsh-full-autoupdate
   ```
