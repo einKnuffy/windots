@@ -9,10 +9,14 @@
 ### Setup WSL by downloading Ubuntu
 
 - Install zsh:
-`sudo apt install zsh`
-
+  ```
+  sudo apt install zsh
+  ```
+  
 - Install oh-my-zsh:
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+  ```sh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
 
 - Edit zsh config in `.zshrc` by replacing with provided one.
 
@@ -24,11 +28,15 @@
   ```
 
 - Open neovim and run in command mode:
-`:call mkdir(stdpath('config'), 'p')`
+  ```
+  :call mkdir(stdpath('config'), 'p')
+  ```
 
 - Then clone the nvim config into the `.config/nvim` folder
 
 - Install starship:
-`curl -sS https://starship.rs/install.sh | sh`
-
+  ```
+  curl -sS https://starship.rs/install.sh | sh
+  ```
+  
 - Edit starship config in `.config/starship.toml` by replacing with provided one.
