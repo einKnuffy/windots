@@ -14,12 +14,14 @@
 - Install oh-my-zsh:
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
-- Now use the `.zshrc` provided in directory above and replace in the `home` directory
+- Edit zsh config in `.zshrc` by replacing with provided one.
 
 - Install nvim by doing:
-`sudo add-apt-repository ppa:neovim-ppa/unstable`
-`sudo apt-get update`
-`sudo apt-get install neovim`
+  ```sh
+  sudo add-apt-repository ppa:neovim-ppa/unstable
+  sudo apt-get update
+  sudo apt-get install neovim
+  ```
 
 - Open neovim and run in command mode:
 `:call mkdir(stdpath('config'), 'p')`
@@ -29,5 +31,4 @@
 - Install starship:
 `curl -sS https://starship.rs/install.sh | sh`
 
-- Edit starship in `.config/starship.toml` by cloning
-
+- Edit starship config in `.config/starship.toml` by replacing with provided one.
