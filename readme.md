@@ -8,9 +8,9 @@
 
 ### Setup WSL by downloading Ubuntu
 
-- Install git:
+- Install git, python3, go, unzip:
   ```sh
-  sudo apt install git
+  sudo apt install git python3 golang unzip clang
   ```
 
 - Install zsh:
