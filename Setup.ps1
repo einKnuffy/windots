@@ -11,7 +11,7 @@ $requiredModules = @(
 # Linked Files (Destination => Source)
 $symlinks = @{
     "$PROFILE.CurrentUserAllHosts" = ".\Profile.ps1"
-    "$HOME\AppData\Local\nvim" = ".\nvim"
+#    "$HOME\AppData\Local\nvim" = ".\nvim"
     "$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = ".\windowsterminal\settings.json"
     "$HOME\AppData\Roaming\lazygit" = ".\lazygit"
 }
@@ -57,27 +57,27 @@ if (!(Get-Command "sed" -ErrorAction SilentlyContinue)) {
 if (!(Get-Command "lazygit" -ErrorAction SilentlyContinue)) {
     choco install -y lazygit
 }
-if (!(Get-Command "nvim" -ErrorAction SilentlyContinue)) {
-    choco install -y neovim
-}
+#if (!(Get-Command "nvim" -ErrorAction SilentlyContinue)) {
+#    choco install -y neovim
+#}
 if (!(Get-Command "bat" -ErrorAction SilentlyContinue)) {
     choco install -y bat
 }
 
 # Create Custom NVIM shotcut
-if (!(Test-Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nvim.lnk")) {
-    $wshShell = New-Object -ComObject WScript.Shell
-    $shortcut = $wshShell.CreateShortcut("$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nvim.lnk")
-    $shortcut.TargetPath = "C:\tools\neovim\nvim-win64\bin\nvim.exe"
-    $shortcut.workingDirectory = (Resolve-Path ..) # Set working directory to parent directory of this script (likely where you keep all Git Projects)
-    $shortcut.IconLocation = "C:\tools\neovim\nvim-win64\bin\nvim-qt.exe,0" # Steal icon from nvim-qt.exe
-    $shortcut.Save()
-}
+#if (!(Test-Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nvim.lnk")) {
+#    $wshShell = New-Object -ComObject WScript.Shell
+#    $shortcut = $wshShell.CreateShortcut("$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\nvim.lnk")
+#    $shortcut.TargetPath = "C:\tools\neovim\nvim-win64\bin\nvim.exe"
+#    $shortcut.workingDirectory = (Resolve-Path ..) # Set working directory to parent directory of this script (likely where you keep all Git Projects)
+#    $shortcut.IconLocation = "C:\tools\neovim\nvim-win64\bin\nvim-qt.exe,0" # Steal icon from nvim-qt.exe
+#    $shortcut.Save()
+#}
 
 # Delete OOTB Nvim Shortcuts (including QT)
-if (Test-Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\") {
-    Remove-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\" -Recurse -Force
-}
+#if (Test-Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\") {
+#    Remove-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Neovim\" -Recurse -Force
+#}
 
 Write-Host "Installing Fonts..."
 # Get all installed font families
