@@ -81,8 +81,8 @@
     {
         "defaults": 
         {
-            "backgroundImage": "C:\\Users\\kjell\\AppData\\Local\\windots\\assets\\background-1.png",
-            "backgroundImageOpacity": 0.05,
+            "backgroundImage": "C:\\Users\\kjell\\AppData\\Local\\windots\\assets\\background-3.jpg",
+            "backgroundImageOpacity": 0.1,
             "colorScheme": "Tokyo Night",
             "font": 
             {
