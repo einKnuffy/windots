@@ -1,5 +1,10 @@
 # Windots
 
+## Tips
+
+- Use Cygwin for Linux-Like Terminal
+- Then use tmux and [my theme for it](https://github.com/einKnuffy/tmux-electricity)
+
 ## My personal Windows wrapper for my [dotfiles](https://github.com/einKnuffy/dotfiles)
 
 > Currently it only modifies powershell to look, feel and behave *better*
